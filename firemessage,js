@@ -1,0 +1,17 @@
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getMessaging } from "firebase/messaging";
+const firebaseConfig = {
+    apiKey: "AIzaSyC26oFYYAi-boH6X-X39k9bH3DM07mL-dg",
+    authDomain: "pushnotification-93aff.firebaseapp.com",
+    projectId: "pushnotification-93aff",
+    storageBucket: "pushnotification-93aff.appspot.com",
+    messagingSenderId: "182381315095",
+    appId: "1:182381315095:web:53c4cdb0c45b91c5f4c852",
+    measurementId: "G-4N7CJ7SRQ4"
+  };
+
+export const app = initializeApp(firebaseConfig);
+export const analytics = getAnalytics(app);
+export const messaging = getMessaging(app);
+  
